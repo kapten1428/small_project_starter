@@ -1,0 +1,20 @@
+$xxs-font-size      : 8px;
+$xs-font-size       : 10px;
+$s-font-size        : 12px;
+$sm-font-size       : 16px;
+$m-font-size        : 18px;
+$ml-font-size       : 20px;
+$l-font-size        : 24px;
+$lx-font-size       : 30px;
+$xl-font-size       : 32px;
+
+$font-size-collections : (
+    xxs : $xxs-font-size,
+    xs  : $xs-font-size,
+    s   : $s-font-size,
+    sm  : $sm-font-size,
+    ml  : $ml-font-size,
+    l   : $l-font-size,
+    lx  : $lx-font-size,
+    xl  : $xl-font-size
+)

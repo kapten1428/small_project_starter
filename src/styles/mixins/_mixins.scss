@@ -1,0 +1,14 @@
+
+// Mobile First Approaching
+@mixin forLargeScreens($media) {
+    @media (min-width: $media/16+em) {
+        @content;
+    }
+}
+
+// Desktop First Approaching
+@mixin forSmallScreens($media) {
+    @media (max-width: $media/16+em) {
+        @content;
+    }
+}
