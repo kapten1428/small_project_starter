@@ -1,0 +1,34 @@
+@import '../abstracts/color';
+
+header{
+    padding: 3rem 0;
+}
+
+.logo {
+    height: 4rem;
+
+    img {
+        height: 100%;
+    }
+}
+
+#nav {
+    text-align: right;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+nav a {
+    margin: 0 10px;
+    padding: 5px;
+    display: inline-block;
+    color: $primary-white-color;
+    font-size: 1rem;
+    text-decoration: none;
+
+    &:hover{
+        color: darken($primary-white-color, 20%);
+    }
+}

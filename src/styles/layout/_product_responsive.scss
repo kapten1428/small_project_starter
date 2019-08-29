@@ -1,0 +1,187 @@
+@import '../mixins/media_query';
+
+@include desktop-general {
+    .container {
+        max-width: 768px;
+    }
+
+    .meat__products {
+        max-height: 450px;
+    }
+
+    .farming {
+        max-width: 768px;
+
+        .text-default {
+            font-size: .8rem;
+        }
+
+        .image-caption {
+            text-align: center;
+
+            img {
+                height: 200px;
+            }
+        }
+    }
+
+    .farming__pic {
+        max-width: 100%;
+        grid-template-columns: repeat(4, 25%);
+        overflow: hidden;
+    }
+}
+
+@include desktop-sm {
+   
+    .container {
+        max-width: 768px;
+    }
+
+    .meat__products {
+        max-height: 319px;
+        
+        .medium__box {
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .farming {
+        max-width: 640px;
+        padding: 0 2rem;
+
+        .text__title {
+            font-size: 30px;
+        }
+    }
+
+    .farming__pic {
+        grid-template-columns: repeat(3, calc(100% /3));
+    }
+
+    .contact_us {
+        text-align: center;
+
+        .g-two {
+            grid-template-columns: 1fr;
+        }
+
+        .contact_option {
+            margin-left: -2rem;
+        }
+
+        .address {
+            text-align: left;
+        }
+    }
+}
+
+
+@include phone-size { 
+    .wrapper {
+        max-width: $mobile-screen-xs ;
+    }
+
+    .wrapper-group {
+        padding-top: 2rem;
+
+        .text-default {
+            font-size: $s-font-size ;
+        }
+    }
+
+    .meat__products {
+        max-height: initial;
+
+        .product__medium {
+            grid-template-columns: none;
+
+            .medium__box {
+                width: 100%;
+                max-height: 300px;
+            }
+        }
+    }
+
+    .farming {
+        max-width: $mobile-screen-xs ;
+        padding-bottom: 4rem;
+        text-align: center;
+
+        &.g-two {
+            grid-template-columns: none;
+        }
+
+        .image-caption {
+            img {
+                height: 150px;
+            }
+        }
+    }
+
+    .farming__pic {
+        grid-template-columns: repeat(2, 50%);
+
+        .img__box {
+            height: 250px;
+        }
+    }
+
+    .contact_us {
+        padding: 1rem 0;
+        text-align: center;
+
+        .g-two {
+            grid-template-columns: 1fr;
+        }
+
+        .d-flex {
+            flex-direction: column;
+        }
+
+        .email-act {
+            input {
+                min-width: initial;
+            }
+
+            button {
+                width: 150px;
+                margin-top: 1rem;
+                margin: 10px auto 0 auto;
+            }
+        }
+
+        .stay-update {
+            padding-top: 2rem;            
+        }
+
+        .address {
+            text-align: center;
+        }
+    }
+}
+
+@include tablet-size {
+    .meat__products {
+        max-height: 300px;
+    }
+
+    .farming {
+        max-width: 640px;
+        padding: 0 2rem;
+
+        .text__title {
+            font-size: 30px;
+        }
+    }
+
+    .farming__pic {
+        grid-template-columns: repeat(2, 50%);
+
+        .img__box {
+            width: inherit;
+        }
+    }
+}

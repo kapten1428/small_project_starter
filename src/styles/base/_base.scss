@@ -1,5 +1,17 @@
 $body-color: blue;
 
 body {
-  color: $body-color;
+  font-family: 'Lato', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lato', sans-serif;
+}
+
+.g-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

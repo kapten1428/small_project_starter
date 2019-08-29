@@ -1,0 +1,37 @@
+@import '../abstracts/variables';
+
+@mixin desktop-general {
+    @media (max-width: $desktop-general-size ) { 
+        @content; 
+    }
+}
+
+@mixin  desktop-sm {
+    @media (max-width: $desktop-general-small ) { 
+        @content; 
+    }
+}
+
+@mixin desktop-xsmall {
+    @media (max-width: $desktop-xsmall  ) { 
+        @content; 
+    }
+}
+
+@mixin tablet-size {
+    @media only screen and (min-device-width : $tablet-size  ) and (max-device-width : $desktop-general-small) and (orientation : portrait) {
+        @content;
+    }
+}
+
+@mixin phone-size {
+    @media screen and (max-width: $phone-size-medium) {
+        @content; 
+    }
+}
+
+@mixin phone-size-small {
+    @media (min-width: $phone-size-ms  ) {
+        @content;
+    } 
+}

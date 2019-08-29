@@ -1,0 +1,78 @@
+@import '../mixins/media_query';
+
+@include desktop-xsmall {
+    .container {
+        max-width: 640px;
+        padding: 0 2rem;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #nav-mobile {
+        display: block;
+        text-align: right;
+        img {
+            width: 1.8rem;
+        }
+    }
+}
+
+@include phone-size {
+    
+    h2 {
+        font-size: 30px;
+    }
+
+    .container {
+        max-width: $mobile-screen-xs ;
+    }
+    header {
+        padding: 1rem 0;
+    };
+
+    .logo {
+        height: 2.5rem;
+    }
+
+    #header-banner {
+        background-attachment: scroll;
+        background-position: center center;
+
+        .banner__caption {
+            top:15%;
+            max-width: $mobile-screen-xs ;
+            text-align: center
+        }
+    }
+
+  
+    #nav  {
+        display: none;
+    }
+
+    #nav-mobile {
+        text-align: right;
+        img {
+            width: 1.8rem;
+        }
+    }
+}
+
+@include tablet-size {
+    #nav  {
+        display: none;
+    }
+    #nav-mobile {
+        text-align: right;
+        img {
+            width: 2rem;
+        }
+    }
+
+    .wrapper {
+        max-width: 640px;
+    }
+}
+
